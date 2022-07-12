@@ -11,3 +11,9 @@ type Block struct {
 	timestamp    time.Time
 	pow          int
 }
+
+type Blockchain struct {
+	genesisBlock Block
+	chain        []Block
+	difficulty   int
+}
