@@ -76,8 +76,6 @@ func (b Blockchain) isValid() bool {
 		if currentBlock.hash != currentBlock.calculateHash() || currentBlock.previousHash != previousBlock.hash {
 			return false
 		}
-
-		return true
-
 	}
+	return true
 }
